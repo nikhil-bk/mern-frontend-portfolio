@@ -45,8 +45,8 @@ const ProjectsAdmin = () => {
 
             const res = await axios.post('/upload', formData, {
                 headers: {
-                    'Access-Control-Allow-Origin': '*',
-                    'Content-Type': 'multipart/form-data',
+                   
+                    'Content-Type': 'multipart/form-data'
                 },
                 withCredentials: true,
             })

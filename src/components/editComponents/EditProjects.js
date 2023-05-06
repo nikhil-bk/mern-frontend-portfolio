@@ -47,8 +47,8 @@ const handleUpload = async (e)=>{
     {
 
         headers: {
-            'Access-Control-Allow-Origin': '*',
-            'Content-Type': 'multipart/form-data',
+           
+            'Content-Type': 'multipart/form-data'
         },
         withCredentials: true,
     })
