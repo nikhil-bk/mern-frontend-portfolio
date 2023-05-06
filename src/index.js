@@ -5,6 +5,9 @@ import App from './App';
 import reportWebVitals from './reportWebVitals';
 import {BrowserRouter} from 'react-router-dom';
 import {DataProvider} from './components/context/GlobalContext';
+import axios from 'axios';
+
+axios.defaults.baseURL = 'https://portfolio-mern-backend.vercel.app/';
 
 ReactDOM.render(
  <BrowserRouter>

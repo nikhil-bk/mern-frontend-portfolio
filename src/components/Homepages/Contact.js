@@ -88,7 +88,7 @@ setMessage('');
 
                     <label htmlFor="name">Name</label>
                     <input type="text" 
-                    placeholder="import name..." 
+                    placeholder="Full Name" 
                     required 
                     value={name}
                     onChange={handleNameChange}
@@ -98,7 +98,7 @@ setMessage('');
 
                     <label htmlFor="email">Email</label>
                     <input type="email"
-                     placeholder="import email..." 
+                     placeholder="Contact Address" 
                      required 
                      value={email}
                      onChange={handleEmailChange}
@@ -110,7 +110,7 @@ setMessage('');
                    <textarea  type='text'
                     name="message"
                     id=""
-                     placeholder='import contact reason...' 
+                     placeholder='Contact Reason...' 
                      value={message}
                      onChange={handleMessageChange}
                      

@@ -1,6 +1,6 @@
 import React from 'react';
 
-import profile from '../../images/ody.JPG';
+import profile from '../../images/nik.jpg';
 // import Particle from 'react-particles-js';
 import Typewriter from 'typewriter-effect';
 import Particles from "react-tsparticles";
@@ -117,7 +117,7 @@ const Header = () => {
                  <h1>
                      <Typewriter
                       options={{
-                          strings:['Odysseas','Kolas'],
+                          strings:['Nikhil','BK'],
                           autoStart:true,
                           loop:true
                       }}
@@ -129,7 +129,7 @@ const Header = () => {
              </div>
 
              <div className="cv">
-                 <span><b>Cv:</b> <a href="/#" target="_blank" rel="noreferrer"><i className="fas fa-file-pdf"></i></a></span>
+                 <span><b>Cv:</b> <a href="https://drive.google.com/file/d/1TmJYUL3hwcfrtK80ptwELk9ETMuz8b7r/view?usp=share_link" target="_blank" rel="noreferrer"><i className="fas fa-file-pdf"></i></a></span>
              </div>
 
               </div>
@@ -143,19 +143,19 @@ const Header = () => {
                       {/* single info */}
                     <div className="info">
                         <label htmlFor="name">Fullname:</label>
-                        <h4>Odysseas Kolas</h4>
+                        <h4>Nikhil BK</h4>
                     </div>
 
                     {/* single info */}
                      <div className="info">
                         <label htmlFor="occupation">occupation:</label>
-                        <h4>Electrician-engineer, seb developer</h4>
+                        <h4>Full Stack Web Developer</h4>
                     </div>
 
                      {/* single info */}
                     <div className="info">
                         <label htmlFor="email">email:</label>
-                        <h4>odkolas@gmail.com</h4>
+                        <h4>nikhilbk9148@gmail.com</h4>
                     </div>
 
                   </div>
