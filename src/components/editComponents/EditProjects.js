@@ -43,7 +43,7 @@ const handleUpload = async (e)=>{
      let formData = new FormData();
     formData.append('file', file);
     
-    const res = await axios.post('/upload', formData, {
+    const res = await axios.post('/upload', formData,{withCredentials:true}, {
         headers:{'content-type': 'multipart/form-data'}
     })
     
