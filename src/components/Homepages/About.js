@@ -14,7 +14,7 @@ const [about] = state.about;
         <div className='main-container'>
           <div className="about">
               <h2 className="title">
-                  about
+                  About
                 
               </h2>
    
