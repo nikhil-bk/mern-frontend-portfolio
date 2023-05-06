@@ -47,8 +47,8 @@ const handleUpload = async (e)=>{
     {
 
         headers: {
-           
-            'Content-Type': 'multipart/form-data'
+          'Access-Control-Allow-Origin': 'https://mern-frontend-portfolio.vercel.app',
+            'Content-Type': 'multipart/form-data',
         },
         withCredentials: true,
     })

@@ -45,7 +45,7 @@ const ProjectsAdmin = () => {
 
             const res = await axios.post('/upload', formData, {
                 headers: {
-                   
+                    'Access-Control-Allow-Origin': 'https://mern-frontend-portfolio.vercel.app',
                     'Content-Type': 'multipart/form-data'
                 },
                 withCredentials: true,
