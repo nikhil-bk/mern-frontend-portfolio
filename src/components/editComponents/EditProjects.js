@@ -99,7 +99,8 @@ axios.get(`/project/${id}`)
 
     product_id:res.data.product_id,
     title:res.data.title,
-    description:res.data.description
+    description:res.data.description,
+    link:res.data.link
 
     })
 }).catch(err=>console.log(err))
@@ -175,6 +176,13 @@ const handleSubmit = (e)=>{
                    value={product.description}
                    onChange={handleChangeInput}
                    required  id="description"  cols="30" rows="3" />
+
+                   <label htmlFor="text">Link/URL</label>
+                   <textarea type="text" 
+                   name="link"  
+                   value={product.link}
+                   onChange={handleChangeInput}
+                   required  id="link"  cols="30" rows="3" />
 
                    <div className="upload" >
                        <input type="file" 

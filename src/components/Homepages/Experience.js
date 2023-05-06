@@ -21,7 +21,10 @@ const Experience = () => {
                   {/* static single experience */}
                {experience.map(item=>(
                       <div className="single-experience" key={item._id}>
-                      <p>{item.experience}</p>
+                      <b>{item?.company_name?.toUpperCase()}</b> 
+                      <span style={{fontSize:"16px"}}>:({item?.start_and_end})</span>
+                      <p>{item?.job_title}</p>
+                      <span>Technology:<i>{item?.technology}</i></span>
                      </div>
                ))}
 

@@ -7,6 +7,7 @@ import React,{useContext} from 'react';
 import {DataContext} from '../context/GlobalContext';
 
 
+
  const Projects = () => {
     const state= useContext(DataContext);
     const[projects] = state.projects
@@ -23,13 +24,15 @@ import {DataContext} from '../context/GlobalContext';
 
         
     <div className="single-project" key={item._id} >
-        <div className="single-project-img">
+        <a href={item?.link} target="_blank">
+        <div className="single-project-img"  >
             <img src={item.images.url} alt=""/>
         </div>
-
+        </a>
         <div className="single-project-info">
         <h3>{item.title}</h3>
         <p>{item.description}</p>
+      
         </div>
     </div>
 
