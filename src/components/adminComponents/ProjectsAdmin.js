@@ -44,7 +44,11 @@ const ProjectsAdmin = () => {
             formData.append('file', file);
 
             const res = await axios.post('/upload', formData, {
-                headers: { 'content-type': 'multipart/form-data' }
+                headers: {
+                    'Access-Control-Allow-Origin': '*',
+                    'Content-Type': 'multipart/form-data',
+                },
+                withCredentials: true,
             })
 
             setImages(res.data);
