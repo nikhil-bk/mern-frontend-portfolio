@@ -142,19 +142,19 @@ const Header = () => {
 
                       {/* single info */}
                     <div className="info">
-                        <label htmlFor="name">Fullname:</label>
+                        <label htmlFor="name">Full Name:</label>
                         <h4>Nikhil BK</h4>
                     </div>
 
                     {/* single info */}
                      <div className="info">
-                        <label htmlFor="occupation">occupation:</label>
+                        <label htmlFor="occupation">Occupation:</label>
                         <h4>Full Stack Web Developer</h4>
                     </div>
 
                      {/* single info */}
                     <div className="info">
-                        <label htmlFor="email">email:</label>
+                        <label htmlFor="email">E-mail:</label>
                         <h4>nikhilbk9148@gmail.com</h4>
                     </div>
 
