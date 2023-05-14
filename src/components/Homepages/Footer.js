@@ -64,7 +64,7 @@ const logOutSubmit = ()=>{
          <h3>Media</h3>
          <div className="contact-media">
          <li><a href="https://www.youtube.com/channel/UC_nJJJ53xeqJ7l_-BY2mLkQ" target="_blank" rel="noreferrer"><i className="fab fa-youtube-square"></i>Youtube</a></li>
-         <li><a href="https://github.com/nikhil-bk/" target="_blank" rel="noreferrer"><i className="fab fa-GitHub"></i>GitHub</a></li>
+         <li><a href="https://github.com/nikhil-bk/" target="_blank" rel="noreferrer"><i className="fab fa-github"></i>GitHub</a></li>
          <li><a href="https://www.linkedin.com/in/nikhilbk9148/" target="_blank" rel="noreferrer"><i className="fab fa-linkedin"></i>Linkdedin</a></li>
          </div>
      </div>

@@ -5,7 +5,7 @@ import axios from 'axios';
 
 const EditExperience = (props) => {
 
-    const [experience, setExperience] = useState({ company_name: "", start_and_end: "", job_title: "", technology: "" });
+    const [experience, setExperience] = useState({ company_name: "", start_and_end: "", job_title: "", technology: "", location: "" });
     const [message, setMessage] = useState('');
     const history = useHistory();
     const { id } = useParams();
@@ -34,7 +34,7 @@ const EditExperience = (props) => {
     const updateExperience = (e) => {
         e.preventDefault();
 
-       
+
 
         axios.put(`/experience/update/${props.match.params.id}`, experience)
             .then(res => {
@@ -64,12 +64,22 @@ const EditExperience = (props) => {
                             <h4>Experience component</h4>
                             <label htmlFor="text">Company Name</label>
                             <input type="text" onChange={(e) => onchangeExperience("company_name", e.target.value)} value={experience?.company_name} />
-                            <label htmlFor="text">Start-End</label>
+
+                            <label htmlFor="text">Start Date - End Date</label>
                             <input type="text" onChange={(e) => onchangeExperience("start_and_end", e.target.value)} value={experience?.start_and_end} />
                             <label htmlFor="text">Job Title</label>
+                            <label htmlFor="text">Location</label>
+                            <input type="text" onChange={(e) => onchangeExperience("location", e.target.value)} value={experience?.location} />
+                            <label htmlFor="text">Start Date - End Date</label>
                             <input type="text" onChange={(e) => onchangeExperience("job_title", e.target.value)} value={experience?.job_title} />
+
                             <label htmlFor="text">Technology</label>
-                            <input type="text" onChange={(e) => onchangeExperience("technology", e.target.value)} value={experience?.technology} />
+                            <textarea type="text"
+                                name="technology"
+                                value={experience?.technology}
+                                onChange={(e) => onchangeExperience("technology", e.target.value)}
+                                required id="link" cols="30" rows="3" />
+
                             <div className="btns">
                                 <button type="submit" >Update item</button>
                                 <Link to="/admin"><button className="cancel-btn">Cancel</button>
