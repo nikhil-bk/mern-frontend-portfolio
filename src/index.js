@@ -7,9 +7,9 @@ import {BrowserRouter} from 'react-router-dom';
 import {DataProvider} from './components/context/GlobalContext';
 import axios from 'axios';
 
-axios.defaults.baseURL = 'https://portfolio-mern-backend.vercel.app/';
+axios.defaults.baseURL = process.env.REACT_APP_BASE_URL;
 
-// axios.defaults.baseURL = 'http://localhost:5000/';
+
 
 ReactDOM.render(
  <BrowserRouter>
